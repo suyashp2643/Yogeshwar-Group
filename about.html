@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Yogeshwar Group</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+.about-grid{display:grid;grid-template-columns:1fr;gap:60px;}
+@media(min-width:980px){.about-grid{grid-template-columns:1fr 1fr;}}
+.about-copy p{font-size:15.5px;line-height:1.85;color:rgba(34,39,46,0.72);margin-bottom:18px;}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.about-photos .img-frame:first-child{grid-column:1/-1;aspect-ratio:16/10;}
+.about-photos .img-frame{aspect-ratio:1/1;}
+</style>
+</head>
+<body>
+<div id="chrome-header"></div>
+
+<div class="page-hero has-img">
+  <div class="page-hero-img"><img src="https://picsum.photos/seed/yogeshwar-about-hero/1600/900" alt="Yogeshwar Group office"></div>
+  <div class="wrap page-hero-content">
+    <div class="eyebrow">About Yogeshwar Group</div>
+    <h1>Built on quality.<br>Recognized for it.</h1>
+    <p>Established on a foundation of quality and exclusivity, Yogeshwar Group has evolved as a trusted name in Nashik's real estate.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <div class="eyebrow">Our story</div>
+      <h2 style="margin:16px 0 22px;font-size:32px;">A distinguished portfolio, one project at a time.</h2>
+      <p>With a distinguished portfolio of residential and commercial projects across Nashik, Yogeshwar Group has been recognized with accolades across the industry — built one realized project at a time, never the other way around.</p>
+      <p>From Vaidya Nagar to Indira Nagar to Ambad Shiwar, every Shivalik address shares the same starting point: a careful line on paper, before it ever becomes a place to call home. Fourteen projects realized, five currently rising, and over a thousand families now calling a Shivalik address home.</p>
+      <p>We work across both residential and commercial property — apartments, shops, and offices — with an experienced team that understands Nashik's growth corridors better than most.</p>
+      <div class="md-quote">
+        <p>"Think Trust. Think Us — that's not a tagline, it's the standard every Shivalik project is held to, from the first drawing to the final handover."</p>
+        <div class="md-name">Kaushik Kothiya</div>
+        <div class="md-role">Managing Director, Yogeshwar Group</div>
+      </div>
+    </div>
+    <div class="about-photos reveal">
+      <div class="img-frame"><img src="https://picsum.photos/seed/yogeshwar-md/900/560" alt="Yogeshwar Group leadership"><div class="img-tag">Leadership — Site Review</div></div>
+      <div class="img-frame"><img src="https://picsum.photos/seed/yogeshwar-site1/600/600" alt="Construction site"></div>
+      <div class="img-frame"><img src="https://picsum.photos/seed/yogeshwar-site2/600/600" alt="Architectural drafting"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">In numbers</div><h2>Fourteen years of building trust.</h2></div>
+      <p class="lede">A track record measured in realized addresses, not promises.</p>
+    </div>
+    <div class="counters reveal">
+      <div class="counter-card"><div class="counter-num">14</div><div class="counter-label">Projects Realized<br>Across Nashik</div></div>
+      <div class="counter-card"><div class="counter-num">5</div><div class="counter-label">Live Projects<br>Currently Under Construction</div></div>
+      <div class="counter-card"><div class="counter-num">1K+</div><div class="counter-label">Families<br>Housed</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">Why choose us</div><h2>Four pillars, one standard.</h2></div>
+    </div>
+    <div class="pillars reveal">
+      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="#B6873E" stroke-width="1.3"><rect x="8" y="8" width="24" height="24" rx="2"/><path d="M14 20l4 4 8-8"/></svg><h3>Quality</h3><p>A foundation virtue and constant company culture.</p></div>
+      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="#7C8B6F" stroke-width="1.3"><circle cx="20" cy="20" r="13"/><path d="M20 9v22M9 20h22"/></svg><h3>Sustainability</h3><p>Embracing the resourcefulness of the earth.</p></div>
+      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="#B6873E" stroke-width="1.3"><path d="M20 33s-12-7.3-12-16.2A6.8 6.8 0 0120 13a6.8 6.8 0 0112 3.8C32 25.7 20 33 20 33z"/></svg><h3>Customer Delight</h3><p>Satisfying needs beyond expectations.</p></div>
+      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="#8C6429" stroke-width="1.3"><path d="M8 24a12 12 0 0124 0v4a4 4 0 01-4 4h-2"/><rect x="6" y="22" width="6" height="8" rx="1"/><rect x="28" y="22" width="6" height="8" rx="1"/></svg><h3>Customer Support</h3><p>Solving pain points by phone, email, live chat.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="chrome-footer"></div>
+<div id="chrome-chat"></div>
+<script src="common.js"></script>
+<script>renderChrome('about'); initReveal();</script>
+</body>
+</html>
