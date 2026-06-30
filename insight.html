@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insight — Yogeshwar Group</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+.article-shell{display:grid;grid-template-columns:1fr;gap:50px;max-width:760px;margin:0 auto;}
+.article-shell .img-frame{aspect-ratio:16/9;margin-bottom:8px;}
+.article-shell p{font-size:15.5px;line-height:1.9;color:rgba(34,39,46,0.74);margin-bottom:20px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:30px;}
+.article-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
+.article-byline .name{font-size:14px;font-weight:600;}
+.article-byline .role{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--bronze);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.pull-quote{font-family:'Fraunces',serif;font-style:italic;font-size:24px;line-height:1.5;color:var(--charcoal);border-left:2px solid var(--gold);padding-left:24px;margin:36px 0;}
+</style>
+</head>
+<body>
+<div id="chrome-header"></div>
+
+<div class="page-hero has-img">
+  <div class="page-hero-img"><img src="https://picsum.photos/seed/yogeshwar-insight-hero/1600/900" alt="Nashik real estate development"></div>
+  <div class="wrap page-hero-content">
+    <div class="eyebrow">Real Estate Insight</div>
+    <h1>Nashik's Real Estate<br>Investment Potential</h1>
+    <p>A look at why Nashik continues to draw both end-users and investors.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap article-shell reveal">
+    <div class="article-byline">
+      <img src="https://picsum.photos/seed/yogeshwar-kk-avatar/100/100" alt="Kaushik Kothiya">
+      <div><div class="name">Kaushik Kothiya</div><div class="role">Managing Director, Yogeshwar Group</div></div>
+    </div>
+
+    <p>Nashik has spent the last decade quietly becoming one of Maharashtra's most consistent real estate stories — not through a single dramatic boom, but through steady infrastructure investment, improving highway connectivity, and a growing base of end-users who want quality construction without Mumbai or Pune pricing.</p>
+
+    <div class="img-frame"><img src="https://picsum.photos/seed/yogeshwar-article-1/1200/675" alt="Nashik development"><div class="img-tag">Pathardi-Deolali corridor</div></div>
+
+    <p>Locations like Pathardi, Indira Nagar, and Ambad Shiwar have benefited the most — each offers proximity to the highway network, established daily-necessity infrastructure, and enough room left for the kind of large-format residential-plus-commercial development that's increasingly in demand.</p>
+
+    <div class="pull-quote">"By aiming to take the life quality to an upper level with every realized project, Yogeshwar Group continues to be the address of luxury."</div>
+
+    <p>For end-users, this translates into apartments that are within five minutes of national highway access, with daily necessities inside a two-kilometre radius — a pattern several of our residents specifically call out. For investors, it means rental and resale demand that's tied to genuine population growth rather than speculation.</p>
+
+    <p>At Yogeshwar Group, our approach has been to build where the city is actually heading — and to back every project with on-time delivery and straightforward loan sanctioning support, so the investment case stays as clean as the construction itself.</p>
+  </div>
+</section>
+
+<div id="chrome-footer"></div>
+<div id="chrome-chat"></div>
+<script src="common.js"></script>
+<script>renderChrome('insight'); initReveal();</script>
+</body>
+</html>

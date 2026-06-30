@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials — Yogeshwar Group</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+.testi-grid{display:grid;grid-template-columns:1fr;gap:22px;}
+@media(min-width:720px){.testi-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1080px){.testi-grid{grid-template-columns:repeat(3,1fr);}}
+.testi-grid .testi-card{flex:initial;}
+</style>
+</head>
+<body>
+<div id="chrome-header"></div>
+
+<div class="page-hero has-img">
+  <div class="page-hero-img"><img src="https://picsum.photos/seed/yogeshwar-testimonials-hero/1600/900" alt="Happy residents"></div>
+  <div class="wrap page-hero-content">
+    <div class="eyebrow">From our residents</div>
+    <h1>What Nashik says.</h1>
+    <p>Six voices, one recurring theme — connectivity, construction quality, and design that actually delivers.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="testi-quote">Spacious 2BHK in Shivalik Sky, with a wonderful indoor play area for the kids. Highly recommended.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Subhash Nitnawre"><div><div class="testi-name">Subhash Nitnawre</div><div class="testi-meta">Shivalik Sky</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">NH connectivity within 5 minutes, and daily necessities within 2km. Genuinely well planned.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Sagar Sonawane"><div><div class="testi-name">Sagar Sonawane</div><div class="testi-meta">Resident</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Best location, best quality — one of the best young developer teams working in Nashik right now.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Sachin Nikam"><div><div class="testi-name">Sachin Nikam</div><div class="testi-meta">Resident</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Good construction, good planning, and close to the highway. Exactly what we were looking for.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Nagraj Baviskar"><div><div class="testi-name">Nagraj Baviskar</div><div class="testi-meta">Resident</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Luxury designs throughout — genuinely one of the best builders operating in Nashik today.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Satyajit Patil"><div><div class="testi-name">Satyajit Patil</div><div class="testi-meta">Resident</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Garden views and easy connectivity. A calm place to come home to every day.</div>
+        <div class="testi-person"><img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Ravi Vekariya"><div><div class="testi-name">Ravi Vekariya</div><div class="testi-meta">Resident</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="chrome-footer"></div>
+<div id="chrome-chat"></div>
+<script src="common.js"></script>
+<script>renderChrome('testimonials'); initReveal();</script>
+</body>
+</html>
